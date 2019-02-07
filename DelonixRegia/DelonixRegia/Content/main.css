@@ -1,0 +1,201 @@
+﻿body {
+    background-color: #CCCCFF;
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    clear: both;
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+/* LOGIN PAGE */
+.logH {
+    color: #FFF;
+    margin-left: 50px;
+}
+
+#loginpage {
+    margin-left: 625px;
+}
+
+.loginHead {
+    width: 30%;
+    border-radius: 5px 5px 0 0;
+    background-color: #F2F2F2;
+    padding: 0.5px;
+    color: #000;
+}
+
+    .loginHead h3 {
+        margin-left: 50px;
+    }
+
+.loginForm {
+    width: 30%;
+    background-color: #FFF;
+    padding: 0.5px;
+    color: #000;
+    border-radius: 0 0 5px 5px;
+    height: 250px;
+}
+
+    .loginForm ul {
+        display: inline;
+    }
+
+    .loginForm label {
+        width: 70%;
+        margin-left: 35px;
+    }
+
+    .loginForm input[type=text], input[type=password] {
+        width: 70%;
+        padding: 12px 20px;
+        margin-left: 35px;
+        margin-top: 5px;
+        border: 1px solid #CCCCFF;
+        box-sizing: border-box;
+    }
+
+    .loginForm .submit {
+        background-color: #CCCCFF;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        margin-left: 35px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 18%;
+    }
+
+    .loginForm .submit a {
+        text-decoration: none;
+        color:#FFF;
+    }
+
+    .loginForm input[type=submit] {
+        background-color: #CCCCFF;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        margin-left: 35px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        .loginForm input[type=submit]:hover {
+            background-color: #FFF;
+            color: #CCCCFF;
+            border: 1px solid #CCCCFF;
+        }
+
+    .loginForm ul {
+        color: #CCCCFF;
+    }
+/* END OF LOGIN PAGE */
+
+/* NAVIGATION BAR */
+.navtab {
+    width: 94%;
+    text-align: center;
+}
+
+    .navtab ul li {
+        display: inline;
+    }
+
+    .navtab img a:hover {
+        background-color: white;
+        opacity: 50%;
+    }
+
+.subNav {
+    width: 65%;
+    text-align: center;
+    background-color: #797979;
+    padding: 1px;
+    border-radius: 8px 8px 0 0;
+    margin-left: 240px;
+}
+
+    .subNav ul li {
+        display: inline;
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    .subNav a {
+        text-decoration: none;
+        color: #333333;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+.fill {
+    text-decoration: none;
+    color: #797979;
+}
+
+.active {
+    background-color: #FFF;
+    border-radius: 5px 5px 0 0;
+    padding: 0;
+}
+
+.inactive {
+    background-color: #F2F2F2;
+    border-radius: 5px 5px 0 0;
+    padding: 0;
+}
+
+/* END OF NAVIGATION BAR */
+
+/* DASHBOARD PAGE CONTENT */
+.dashContent {
+    width: 80%;
+    background-color: #FFF;
+    border-radius: 5px;
+    margin-left: 83px;
+    padding-left: 50px;
+}
+
+    .dashContent table {
+        width: 100%;
+        padding: 5px;
+        margin: 5px;
+    }
+
+        .dashContent table td .tbBook {
+            margin-left: 50px;
+        }
+
+        .dashContent table a:visited {
+            color: blue;
+        }
+/* END OF DASHBOARD PAGE CONTENT */
+
+/* BOOKING CONTENT */
+.bookingDetails {
+    width: 65.15%;
+    background-color: #FFF;
+    height: 500px;
+    margin-left: 240px;
+}
+
+.bookingSearch {
+    padding: 15px;
+    padding-left: 60px;
+}
+
+    .bookingSearch input[type=search] {
+        height: 50px;
+        width: 220px;
+        font-size: 24px;
+    }
+
+
+/* END OF BOOKING CONTENT */

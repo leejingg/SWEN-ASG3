@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="~/Content/main.css">
+    <title>Delonix Regia. | Login</title>
+</head>
+
+<body>
+
+    <section id="loginpage">
+        <h2 class="logH">Delonix Regia.</h2>
+
+        <div class="loginHead">
+            <h3>Admin Login</h3>
+        </div>
+        <div class="loginForm">
+            <ul>
+                <li><label style="color: black;" for="username">Username</label></li>
+                <li><input type="text" id="username" name="username" required></li>
+                <li><label style="color: black; " for="password">Password</label></li>
+                <li><input type="password" id="password" name="password" placeholder="" required></li>
+                <li class="submit">@Html.ActionLink("Submit", "Dashboard", "Dashboard")</li>
+                
+
+            </ul>
+        </div>
+    </section>
+
+</body>
+</html>
