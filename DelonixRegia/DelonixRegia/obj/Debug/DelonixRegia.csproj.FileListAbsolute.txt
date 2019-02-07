@@ -84,7 +84,6 @@ C:\DipIT\Year2\Sem2\SWEN\Final\DelonixRegia\DelonixRegia\bin\Microsoft.AI.Depend
 C:\DipIT\Year2\Sem2\SWEN\Final\DelonixRegia\DelonixRegia\bin\Microsoft.AI.WindowsServer.xml
 C:\DipIT\Year2\Sem2\SWEN\Final\DelonixRegia\DelonixRegia\bin\Microsoft.AI.Web.xml
 C:\DipIT\Year2\Sem2\SWEN\Final\DelonixRegia\DelonixRegia\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\DipIT\Year2\Sem2\SWEN\Final\DelonixRegia\DelonixRegia\obj\Debug\DelonixRegia.csprojAssemblyReference.cache
 C:\DipIT\Year2\Sem2\SWEN\Final\DelonixRegia\DelonixRegia\obj\Debug\DelonixRegia.csproj.CoreCompileInputs.cache
 C:\DipIT\Year2\Sem2\SWEN\Final\DelonixRegia\DelonixRegia\obj\Debug\DelonixRegia.csproj.CopyComplete
 C:\DipIT\Year2\Sem2\SWEN\Final\DelonixRegia\DelonixRegia\obj\Debug\DelonixRegia.dll
