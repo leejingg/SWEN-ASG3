@@ -150,6 +150,9 @@
     <Compile Include="Controllers\BookingsController.cs" />
     <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HousekeepingController.cs" />
+    <Compile Include="Controllers\ReportsController.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -213,6 +216,9 @@
     <Content Include="Views\Bookings\AddBookings.cshtml" />
     <Content Include="Views\Bookings\AddBookings2.cshtml" />
     <Content Include="Views\Bookings\Invoices.cshtml" />
+    <Content Include="Views\Housekeeping\Housekeeping.cshtml" />
+    <Content Include="Views\Reports\Reports.cshtml" />
+    <Content Include="Views\Users\Users.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

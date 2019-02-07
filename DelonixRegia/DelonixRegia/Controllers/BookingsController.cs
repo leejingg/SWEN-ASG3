@@ -13,5 +13,45 @@ namespace DelonixRegia.Controllers
         {
             return View();
         }
+
+        public ActionResult DashBoard()
+        {
+            return View();
+        }
+
+        public ActionResult Bookings()
+        {
+            return View();
+        }
+
+        public ActionResult AddBookings()
+        {
+            return View();
+        }
+
+        public ActionResult AddBookings2()
+        {
+            return View();
+        }
+
+        public ActionResult Invoices()
+        {
+            return View();
+        }
+
+        public ActionResult Housekeeping()
+        {
+            return View();
+        }
+
+        public ActionResult Reports()
+        {
+            return View();
+        }
+
+        public ActionResult Users()
+        {
+            return View();
+        }
     }
 }

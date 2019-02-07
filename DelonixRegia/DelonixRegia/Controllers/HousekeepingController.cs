@@ -6,9 +6,9 @@ using System.Web.Mvc;
 
 namespace DelonixRegia.Controllers
 {
-    public class DashboardController : Controller
+    public class HousekeepingController : Controller
     {
-        // GET: Dashboard
+        // GET: Housekeeping
         public ActionResult Index()
         {
             return View();

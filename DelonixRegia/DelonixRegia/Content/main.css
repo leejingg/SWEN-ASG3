@@ -60,23 +60,6 @@
         box-sizing: border-box;
     }
 
-    .loginForm .submit {
-        background-color: #CCCCFF;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        margin-left: 35px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        width: 18%;
-    }
-
-    .loginForm .submit a {
-        text-decoration: none;
-        color:#FFF;
-    }
-
     .loginForm input[type=submit] {
         background-color: #CCCCFF;
         color: white;
@@ -109,11 +92,6 @@
         display: inline;
     }
 
-    .navtab img a:hover {
-        background-color: white;
-        opacity: 50%;
-    }
-
 .subNav {
     width: 65%;
     text-align: center;
@@ -123,17 +101,26 @@
     margin-left: 240px;
 }
 
-    .subNav ul li {
+    .subNav ul li, .subNav2 ul li {
         display: inline;
         padding: 15px;
         font-size: 20px;
     }
 
-    .subNav a {
+    .subNav a, .subNav2 a {
         text-decoration: none;
         color: #333333;
         font-family: Arial, Helvetica, sans-serif;
     }
+
+.subNav2 {
+    width: 99.8%;
+    text-align: center;
+    background-color: #D7D7D7;
+    padding: 1px;
+    border-radius: 0 0 10px 10px;
+}
+
 
 .fill {
     text-decoration: none;
@@ -192,10 +179,50 @@
 }
 
     .bookingSearch input[type=search] {
-        height: 50px;
-        width: 220px;
-        font-size: 24px;
+        height: 30px;
+        width: 200px;
+        font-size: 16px;
     }
 
+.bookingTable table {
+    width: 98%;
+    margin-left: 10px;
+    padding: 50px;
+}
 
+.bookingTable a {
+    color: blue;
+}
+
+.bookingTable table td {
+    text-align: center;
+}
+
+.bookingTable th {
+    background-color: #F2F2F2;
+}
+
+.bookingTable tr:nth-child(odd) {
+    background-color: #F2F2F2;
+}
+
+.pagination {
+    width: 98%;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: #F2F2F2;
+}
+
+.request {
+    height: 30px;
+}
+
+.action {
+    margin: 5px;
+    margin-left: 10px;
+    height: 40px;
+}
 /* END OF BOOKING CONTENT */

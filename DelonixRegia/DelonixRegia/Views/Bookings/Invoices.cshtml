@@ -1,1 +1,89 @@
-﻿
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="~/Content/main.css">
+    <title>Delonix Regia. | Invoices</title>
+</head>
+
+<body>
+    <div class="navtab">
+        <nav>
+            <ul>
+                <li><a href='@Url.Action("Dashboard", "Dashboard")'><img src="~/img/dash.PNG" width="170" height="100" /></a></li>
+                <li><a href='@Url.Action("Bookings", "Bookings")'><img src="~/img/bookw.PNG" width="170" height="100" /></a></li>
+                <li><a href='@Url.Action("Housekeeping", "Housekeeping")'><img src="~/img/housekeep.PNG" width="170" height="100" /></a></li>
+                <li><a href='@Url.Action("Reports", "Reports")'><img src="~/img/report.PNG" width="170" height="100" /></a></li>
+                <li><a href='@Url.Action("Users", "Users")'><img src="~/img/user.PNG" width="170" height="100" /></a></li>
+                <li><a href='@Url.Action("Index", "Home")'><img src="~/img/logout.PNG" width="170" height="100" /></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="mainContent">
+        <div class="navContent">
+            <nav class="subNav">
+                <ul>
+                    <li class="inactive"><a href='@Url.Action("Bookings", "Bookings")'>Bookings</a></li>
+                    <li class="inactive"><a href='@Url.Action("AddBookings", "Bookings")'>Add bookings</a></li>
+                    <li class="active"><a href='@Url.Action("Invoices", "Bookings")'>Invoices</a></li>
+                    <li class="fill"></li><li class="fill"></li><li class="fill"></li>
+                    <li class="fill"></li><li class="fill"></li><li class="fill"></li>
+                    <li class="fill"></li><li class="fill"></li><li class="fill"></li>
+                    <li class="fill"></li><li class="fill"></li><li class="fill"></li>
+                    <li class="fill"></li><li class="fill"></li><li class="fill"></li>
+                    <li class="fill"></li><li class="fill"></li><li class="fill"></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="bookingDetails">
+            <div class="bookingSearch">
+                <input type="search" />
+            </div>
+            <div class="bookingTable">
+                <table border=1>
+                    <tr>
+                        <th><input type="checkbox" /></th>
+                        <th>Order No.</th>
+                        <th>Issue Date</th>
+                        <th>Due Date</th>
+                        <th>Created</th>
+                        <th>Status</th>
+                        <th>Total</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" /></td>
+                        <td><p><a href="#">KI1440508007</a></p></td>
+                        <td>25-12-2018</td>
+                        <td>01-01-2019</td>
+                        <td>25-12-2018,19:41 </td>
+                        <td>
+                            <select class="request">
+                                <option>Not Paid</option>
+                                <option>Paid</option>
+                            </select>
+                        </td>
+                        <td>$75.00</td>
+                        <td>
+                            <a href="#" style="text-decoration: none;">
+                                <img src="~/img/edit.PNG" width="30" height="30" class="tableEdit" />
+                                <img src="~/img/delete.PNG" width="30" height="30" class="tableDelete" />
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="pagination">
+                <select class="action">
+                    <option>Choose Action</option>
+                    <option>Delete Selected</option>
+                    <option>Export</option>
+                </select> Go to page: <input type="text" placeholder="1" style="width: 10px;" /> /1
+                <div style="float: right; color:grey; margin: 15px;">
+                    Total items: 1/10
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
