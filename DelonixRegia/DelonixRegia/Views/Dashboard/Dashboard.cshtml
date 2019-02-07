@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="~/Content/main.css">
+    <title>Delonix Regia. | Dashboard</title>
+</head>
+
+<body class="body">
+    <div class="navtab">
+        <nav>
+            <ul>
+                <li><a href='@Url.Action("Dashboard", "Dashboard")'><img src="~/img/dashw.PNG" width="170" height="100" /></a></li>
+                <li><a href='@Url.Action("Dashboard", "Dashboard")'><img src="~/img/bookings.PNG" width="170" height="100" /></a></li>
+                <li><a href='@Url.Action("Dashboard", "Dashboard")'><img src="~/img/housekeep.PNG" width="170" height="100" /></a></li>
+                <li><a href='@Url.Action("Dashboard", "Dashboard")'><img src="~/img/report.PNG" width="170" height="100" /></a></li>
+                <li><a href='@Url.Action("Dashboard", "Dashboard")'><img src="~/img/user.PNG" width="170" height="100" /></a></li>
+                <li><a href='@Url.Action("Index", "Home")'><img src="~/img/logout.PNG" width="170" height="100" /></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="dashContent">
+        <table>
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td>Rooms Booked Today:</td>
+                            <td><a href="#">2</a></td>
+                        </tr>
+                        <tr>
+                            <td>Rooms Pending Today:</td>
+                            <td><a href="#">0</a></td>
+                        </tr>
+                        <tr>
+                            <td>Available Rooms Today:</td>
+                            <td><a href="#">15</a></td>
+                        </tr>
+                    </table>
+                    <br />
+                    <hr />
+                    <h2>GUEST:</h2>
+                    <table>
+                        <tr>
+                            <td>Staying tonight</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td style="color: grey;">Adults</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td style="color: grey;">Children</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Arriving today</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td style="color: grey;">Adults</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td style="color: grey;">Children</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Leaving today</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td style="color: grey;">Adults</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td style="color: grey;">Children</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="dbLink">
+                                    <br />
+                                    <br />
+                                    <p><a href="#">View Reports</a></p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <div class="tbBook">
+                        <h3 st>LATEST BOOKINGS</h3>
+                        <hr />
+                        <p><a href="#">ID: QO1440508810</a></p>
+                        <p>Michelle Perez</p>
+                        <p>+61 123 456 789</p>
+                        <p><strong>Stay:</strong> from 11-01-2019 to 13-01-2019, 2 nights</p>
+                        <p><strong>Rooms:</strong> R104</p>
+                        <hr />
+                        <p><a href="#">ID: KI1440508007</a></p>
+                        <p>Yuli Griffin</p>
+                        <p>+61 987 654 321</p>
+                        <p><strong>Stay:</strong> from 14-01-2019 to 15-01-2019, 1 night</p>
+                        <p><strong>Rooms:</strong> R105</p>
+                        <hr />
+                        <div class="dbLink">
+                            <p><a href="#">View All Bookings</a></p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
+
