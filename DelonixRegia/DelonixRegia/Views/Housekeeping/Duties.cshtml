@@ -1,11 +1,15 @@
-﻿<!DOCTYPE html>
+﻿@section scripts {
+    @Scripts.Render("~/bundles/app")
+}
+
+<!DOCTYPE html>
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="~/Content/main.css">
     <title>Delonix Regia. | Dashboard</title>
 </head>
-
 <body class="body">
+    @* Top Navbar *@
     <div class="navtab">
         <nav>
             <ul>
@@ -20,6 +24,7 @@
     </div>
 
     <div class="mainContent">
+        @* Navbar *@
         <div class="navContent">
             <nav class="subNav">
                 <ul>
@@ -41,12 +46,17 @@
                 </ul>
             </nav>
         </div>
+
         <div class="bookingDetails">
+
+            @* Search bar *@
             <div class="bookingSearch">
                 <input type="search" placeholder="Search" />
             </div>
+
+            @* DUTY TABLE *@
             <div class="bookingTable">
-                <table border=1 style="padding-left:20px; padding-right:20px;">
+                <table border=1>
                     <tr>
                         <th>ID</th>
                         <th>Staff</th>
@@ -64,10 +74,16 @@
                         <td>60</td>
                         <td>Room</td>
                         <td>-</td>
-                        <td>Done</td>
+                        <td>
+                            <select class="request">
+                                <option>Done</option>
+                                <option>Pending</option>
+                                <option>Cancelled</option>
+                            </select>
+                        </td>
                         <td>
                             <a href="#" style="text-decoration: none;">
-                                <img src="~/img/edit.PNG" width="30" height="30" class="tableEdit" />
+                                <img src="~/img/edit.PNG" width="30" height="30" class="tableEdit" title="Edit" onclick="status()" />
                             </a>
                         </td>
                     </tr>
@@ -78,10 +94,16 @@
                         <td>23</td>
                         <td>Room</td>
                         <td>Extra Bed</td>
-                        <td>Pending</td>
+                        <td>
+                            <select class="request">
+                                <option>Pending</option>
+                                <option>Done</option>
+                                <option>Cancelled</option>
+                            </select>
+                        </td>
                         <td>
                             <a href="#" style="text-decoration: none;">
-                                <img src="~/img/edit.PNG" width="30" height="30" class="tableEdit" />
+                                <img src="~/img/edit.PNG" width="30" height="30" class="tableEdit" title="Edit" onclick="status()" />
                             </a>
                         </td>
                     </tr>
@@ -91,3 +113,9 @@
     </div>
 </body>
 </html>
+
+<script>
+    function status() {
+        alert("Status Updated!");
+    }
+</script>

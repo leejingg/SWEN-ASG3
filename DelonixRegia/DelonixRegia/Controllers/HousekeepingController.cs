@@ -68,5 +68,10 @@ namespace DelonixRegia.Controllers
         {
             return View();
         }
+
+        public ActionResult EditDuty()
+        {
+            return View();
+        }
     }
 }

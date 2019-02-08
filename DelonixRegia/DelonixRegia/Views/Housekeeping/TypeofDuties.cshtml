@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@section scripts {
+    @Scripts.Render("~/bundles/app")
+}
+
+<!DOCTYPE html>
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="~/Content/main.css">
@@ -6,6 +10,7 @@
 </head>
 
 <body class="body">
+    @* Top Navbar *@
     <div class="navtab">
         <nav>
             <ul>
@@ -20,6 +25,7 @@
     </div>
 
     <div class="mainContent">
+        @* Navbar *@
         <div class="navContent">
             <nav class="subNav">
                 <ul>
@@ -42,11 +48,15 @@
             </nav>
         </div>
         <div class="bookingDetails">
+
+            @* Search bar *@
             <div class="bookingSearch">
                 <input type="search" placeholder="Search" />
             </div>
+
+            @* DUTY TABLE *@
             <div class="bookingTable">
-                <table border=1 style="padding-left:20px; padding-right:20px;">
+                <table border=1>
                     <tr>
                         <th>ID</th>
                         <th>Staff</th>
@@ -62,13 +72,13 @@
                         <td>Clare Toh</td>
                         <td>21/9/2018 2:00pm</td>
                         <td>60</td>
-                        <td>Room</td>
+                        <td>General</td>
                         <td>-</td>
                         <td>Done</td>
                         <td>
                             <a href="#" style="text-decoration: none;">
-                                <img src="~/img/edit.PNG" width="30" height="30" class="tableEdit" />
-                                <img src="~/img/delete.PNG" width="30" height="30" class="tableDelete" />
+                                <img src="~/img/edit.PNG" width="30" height="30" class="tableEdit" title="Edit"/>
+                                <img src="~/img/delete.PNG" width="30" height="30" class="tableDelete" title="Delete" onclick="return confirm('Are you sure you want to delete this item?');"/>
                             </a>
                         </td>
                     </tr>
@@ -82,8 +92,8 @@
                         <td>Pending</td>
                         <td>
                             <a href="#" style="text-decoration: none;">
-                                <img src="~/img/edit.PNG" width="30" height="30" class="tableEdit" />
-                                <img src="~/img/delete.PNG" width="30" height="30" class="tableDelete" />
+                                <a href="@Url.Action("EditDuty", "Housekeeping")"><img src="~/img/edit.PNG" width="30" height="30" class="tableEdit" title="Edit" /></a>
+                                <img src="~/img/delete.PNG" width="30" height="30" class="tableDelete" title="Delete" onclick="return confirm('Are you sure you want to delete this item?');"/>
                             </a>
                         </td>
                     </tr>

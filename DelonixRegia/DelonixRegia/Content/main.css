@@ -293,3 +293,30 @@
     cursor: pointer;
 }
 /* END OF ADD BOOKING CONTENT */
+
+/* START OF ADD DUTIES CONTENT */
+.dDetails {
+    width: 95%;
+    margin: 30px;
+    margin-top: 0;
+    padding: 30px;
+    padding-left: 80px;
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    .dDetails th {
+        color: #797979;
+    }
+
+.dDetails input[type=button] {
+    background-color: #FFF;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid #797979;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* END OF ADD DUTIES CONTENT */

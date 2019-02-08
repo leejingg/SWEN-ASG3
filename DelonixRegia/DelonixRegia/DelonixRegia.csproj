@@ -179,6 +179,7 @@
     <Content Include="img\reportw.PNG" />
     <Content Include="img\user.PNG" />
     <Content Include="img\userw.PNG" />
+    <Content Include="Scripts\app.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -208,8 +209,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Dashboard\Dashboard.cshtml" />
     <Content Include="Views\Bookings\Bookings.cshtml" />
@@ -222,6 +221,7 @@
     <Content Include="Views\Housekeeping\Duties.cshtml" />
     <Content Include="Views\Housekeeping\AddDuties.cshtml" />
     <Content Include="Views\Housekeeping\TypeofDuties.cshtml" />
+    <Content Include="Views\Housekeeping\EditDuty.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

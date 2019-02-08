@@ -31,8 +31,8 @@
                 <ul>
                     <li class="inactive"><a href='@Url.Action("Housekeeping", "Housekeeping")'>Employee Record</a></li>
                     <li class="inactive"><a href='@Url.Action("Duties", "Housekeeping")'>Duties</a></li>
-                    <li class="active"><a href='@Url.Action("AddDuties", "Housekeeping")'>Assign Duties</a></li>
-                    <li class="inactive"><a href='@Url.Action("TypeofDuties", "Housekeeping")'>Manage Duties</a></li>
+                    <li class="inactive"><a href='@Url.Action("AddDuties", "Housekeeping")'>Assign Duties</a></li>
+                    <li class="active"><a href='@Url.Action("TypeofDuties", "Housekeeping")'>Manage Duties</a></li>
                     <li class="fill"></li>
                     <li class="fill"></li>
                     <li class="fill"></li>
@@ -51,7 +51,7 @@
 
             @* Add duty form *@
             <table class="dDetails">
-                <th>Assign Duties<br /><br /></th>
+                <th>Edit Duty<br /><br /></th>
                 <tr>
                     <td>
                         <table>
@@ -59,8 +59,8 @@
                                 <td>Duty Type</td>
                                 <td>
                                     <select>
-                                        <option>General</option>
                                         <option>Room</option>
+                                        <option>General</option>
                                         <option>Estate</option>
                                         <option>Security Managment</option>
                                     </select>
@@ -68,20 +68,20 @@
                             </tr>
                             <tr>
                                 <td>Staff Name</td>
-                                <td><input type="text" required /></td>
+                                <td><input type="text" value="Mary Lim" required /></td>
                             </tr>
                             <tr>
                                 <td>Room ID</td>
-                                <td><input type="number" required /></td>
+                                <td><input type="number" value="23" required /></td>
                             </tr>
                             <tr>
                                 <td>Schedule for duty</td>
-                                <td><input type="datetime-local" required /></td>
+                                <td><input type="datetime-local" value="2018-12-23T13:00" required /></td>
                             </tr>
                             <tr>
                                 <td colspan="2">
                                     Additional Remarks <br />
-                                    <div class="note"><input type="text" required /></div>
+                                    <div class="note"><textarea style="width:300px;" rows="5">Extra Bed</textarea></div>
                                 </td>
                             </tr>
                             <tr>
