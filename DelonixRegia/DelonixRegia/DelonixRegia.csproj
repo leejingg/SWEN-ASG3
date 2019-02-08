@@ -219,6 +219,9 @@
     <Content Include="Views\Housekeeping\Housekeeping.cshtml" />
     <Content Include="Views\Reports\Reports.cshtml" />
     <Content Include="Views\Users\Users.cshtml" />
+    <Content Include="Views\Housekeeping\Duties.cshtml" />
+    <Content Include="Views\Housekeeping\AddDuties.cshtml" />
+    <Content Include="Views\Housekeeping\TypeofDuties.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
