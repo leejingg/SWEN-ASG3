@@ -53,5 +53,20 @@ namespace DelonixRegia.Controllers
         {
             return View();
         }
+
+        public ActionResult Duties()
+        {
+            return View();
+        }
+
+        public ActionResult AddDuties()
+        {
+            return View();
+        }
+
+        public ActionResult TypeofDuties()
+        {
+            return View();
+        }
     }
 }
