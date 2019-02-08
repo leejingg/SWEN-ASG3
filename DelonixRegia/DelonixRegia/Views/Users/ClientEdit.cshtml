@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="~/Content/main.css">
+    <title>Delonix Regia. | Dashboard</title>
+</head>
+
+<body class="body">
+    <div class="navtab">
+        <nav>
+            <ul>
+                <li><a href='@Url.Action("Dashboard", "Dashboard")'><img src="~/img/dash.PNG" width="170" height="100" /></a></li>
+                <li><a href='@Url.Action("Bookings", "Bookings")'><img src="~/img/bookings.PNG" width="170" height="100" /></a></li>
+                <li><a href='@Url.Action("Housekeeping", "Housekeeping")'><img src="~/img/housekeep.PNG" width="170" height="100" /></a></li>
+                <li><a href='@Url.Action("Reports", "Reports")'><img src="~/img/report.PNG" width="170" height="100" /></a></li>
+                <li><a href='@Url.Action("Users", "Users")'><img src="~/img/userw.PNG" width="170" height="100" /></a></li>
+                <li><a href='@Url.Action("Index", "Home")'><img src="~/img/logout.PNG" width="170" height="100" /></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="mainContent">
+        <div class="navContent">
+            <nav class="subNav">
+                <ul>
+                    <li class="active"><a href='@Url.Action("Client", "Users")'>Client</a></li>
+                    <li class="inactive"><a href='@Url.Action("Users", "Users")'>Staff</a></li>
+                    <li class="inactive"><a href='@Url.Action("AddStaff", "Users")'>Add Staff</a></li>
+                    <li class="fill"></li>
+                    <li class="fill"></li>
+                    <li class="fill"></li>
+                    <li class="fill"></li>
+                    <li class="fill"></li>
+                    <li class="fill"></li>
+                    <li class="fill"></li>
+                    <li class="fill"></li>
+                    <li class="fill"></li>
+                    <li class="fill"></li>
+                    <li class="fill"></li>
+                    <li class="fill"></li>
+                    <li class="fill"></li>
+                    <li class="fill"></li>
+                    <li class="fill"></li>
+                    <li class="fill"></li>
+                    <li class="fill"></li>
+                    <li class="fill"></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="bookingDetails">
+            <table class="cDetails">
+                <th>Client details<br /><br /></th>
+
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>Title</td>
+                                <td>
+                                    <select>
+                                        <option>Ms</option>
+                                        <option>Mrs.</option>
+                                        <option>Mdm</option>
+                                        <option>Mr.</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>First Name</td>
+                                <td><input type="text" value="Perez" /></td>
+                            </tr>
+                            <tr>
+                                <td>Last Name</td>
+                                <td><input type="text" value="Mechelle" /></td>
+                            </tr>
+                            <tr>
+                                <td>Phone</td>
+                                <td><input type="text" value="92378178" /></td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td><input type="text" value="mechellep@gmail.com"/></td>
+                            </tr>
+                            <tr>
+                                <td>Address Line</td>
+                                <td><input type="text" value="9713 St Margarets St. Jupiter, FL 33458"/></td>
+                            </tr>
+                            <tr>
+                                <td>City</td>
+                                <td><input type="text" value="USA" /></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><p></p></td>
+                                <td><p></p></td>
+                            </tr>
+                            <tr>
+                                <td>Country/Region/State</td>
+                                <td><input type="text" value="US" /></td>
+                            </tr>
+                            <tr>
+                                <td>Postcode/Zip</td>
+                                <td><input type="text" value="33458"" /></td>
+                            </tr>
+                            <tr>
+                                <td>Country</td>
+                                <td>
+                                    <select>
+                                        <option>--Choose--</option>
+                                        <option>Singapore</option>
+                                        <option>USA</option>
+                                        <option>Other Countries</option>
+                                        <option>Other Countries</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="button" value="Save" onclick="Submit()"/></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+
+        </div>
+    </div>
+
+</body>
+</html>
+<script>
+    function submit() {
+        alert("Updated!");
+        window.location.href = "@Url.Action("Client", "Users")";
+    }
+</script>
