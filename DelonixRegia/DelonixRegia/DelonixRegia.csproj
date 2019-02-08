@@ -219,10 +219,16 @@
     <Content Include="Views\Housekeeping\Housekeeping.cshtml" />
     <Content Include="Views\Reports\Reports.cshtml" />
     <Content Include="Views\Users\Users.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\Users\AddStaff.cshtml" />
     <Content Include="Views\Users\Client.cshtml" />
     <Content Include="Views\Users\ClientEdit.cshtml" />
     <Content Include="Views\Users\StaffEdit.cshtml" />
+=======
+    <Content Include="Views\Housekeeping\Duties.cshtml" />
+    <Content Include="Views\Housekeeping\AddDuties.cshtml" />
+    <Content Include="Views\Housekeeping\TypeofDuties.cshtml" />
+>>>>>>> 7b55072bba233f9160718bb58126fe90b4a1cddf
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

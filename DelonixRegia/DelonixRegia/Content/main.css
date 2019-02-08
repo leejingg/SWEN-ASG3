@@ -195,6 +195,7 @@
 
 .bookingTable table td {
     text-align: center;
+    padding: 5px;
 }
 
 .bookingTable th {
