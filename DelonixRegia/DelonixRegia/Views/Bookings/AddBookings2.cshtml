@@ -1,1 +1,139 @@
-﻿
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="~/Content/main.css">
+    <title>Delonix Regia. | Add Booking</title>
+</head>
+
+<body>
+    <div class="navtab">
+        <nav>
+            <ul>
+                <li><a href='@Url.Action("Dashboard", "Dashboard")'><img src="~/img/dash.PNG" width="170" height="100" /></a></li>
+                <li><a href='@Url.Action("Bookings", "Bookings")'><img src="~/img/bookw.PNG" width="170" height="100" /></a></li>
+                <li><a href='@Url.Action("Housekeeping", "Housekeeping")'><img src="~/img/housekeep.PNG" width="170" height="100" /></a></li>
+                <li><a href='@Url.Action("Reports", "Reports")'><img src="~/img/report.PNG" width="170" height="100" /></a></li>
+                <li><a href='@Url.Action("Users", "Users")'><img src="~/img/user.PNG" width="170" height="100" /></a></li>
+                <li><a href='@Url.Action("Index", "Home")'><img src="~/img/logout.PNG" width="170" height="100" /></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="navContent">
+        <nav class="subNav">
+            <ul>
+                <li class="inactive"><a href='@Url.Action("Bookings", "Bookings")'>Bookings</a></li>
+                    <li class="active"><a href='@Url.Action("AddBookings", "Bookings")'>Add bookings</a></li>
+                    <li class="inactive"><a href='@Url.Action("Invoices", "Bookings")'>Invoices</a></li>
+                    <li class="fill"></li><li class="fill"></li><li class="fill"></li>
+                    <li class="fill"></li><li class="fill"></li><li class="fill"></li>
+                    <li class="fill"></li><li class="fill"></li><li class="fill"></li>
+                    <li class="fill"></li><li class="fill"></li><li class="fill"></li>
+                    <li class="fill"></li><li class="fill"></li><li class="fill"></li>
+                    <li class="fill"></li><li class="fill"></li><li class="fill"></li>
+            </ul>
+        </nav>
+        <div class="bookingDetails">
+            <nav class="subNav2">
+                <ul>
+                    <li class="inactive"><a href='@Url.Action("AddBookings", "Bookings")'>Add bookings</a></li>
+                    <li class="active"><a href='@Url.Action("AddBookings2", "Bookings")'>Add client</a></li>
+                    <li class="fill"></li><li class="fill"></li><li class="fill"></li>
+                        <li class="fill"></li><li class="fill"></li><li class="fill"></li>
+                        <li class="fill"></li><li class="fill"></li><li class="fill"></li>
+                        <li class="fill"></li><li class="fill"></li><li class="fill"></li>
+                        <li class="fill"></li><li class="fill"></li><li class="fill"></li>
+                        <li class="fill"></li><li class="fill"></li><li class="fill"></li>
+                        <li class="fill"></li><li class="fill"></li><li class="fill"></li>
+                </ul>
+            </nav>
+
+            <table class="cDetails">
+                <th>Client details<br /><br /></th>
+
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>Title</td>
+                                <td>
+                                    <select>
+                                        <option>Mr.</option>
+                                        <option>Mrs.</option>
+                                        <option>Mdm</option>
+                                        <option>Ms</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>First Name</td>
+                                <td><input type="text" /></td>
+                            </tr>
+                            <tr>
+                                <td>Last Name</td>
+                                <td><input type="text" /></td>
+                            </tr>
+                            <tr>
+                                <td>Phone</td>
+                                <td><input type="text" /></td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td><input type="text" /></td>
+                            </tr>
+                            <tr>
+                                <td>Address Line</td>
+                                <td><input type="text" /></td>
+                            </tr>
+                            <tr>
+                                <td>City</td>
+                                <td><input type="text" /></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><p></p></td>
+                                <td><p></p></td>
+                            </tr>
+                            <tr>
+                                <td>Country/Region/State</td>
+                                <td><input type="text" /></td>
+                            </tr>
+                            <tr>
+                                <td>Postcode/Zip</td>
+                                <td><input type="text" /></td>
+                            </tr>
+                            <tr>
+                                <td>Country</td>
+                                <td>
+                                    <select>
+                                        <option>--Choose--</option>
+                                        <option>Singapore</option>
+                                        <option>Other Countries</option>
+                                        <option>Other Countries</option>
+                                        <option>Other Countries</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    Note <br />
+                                    <div class="note"><input type="text" /></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="button" value="Save" /></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+</body>
+</html>

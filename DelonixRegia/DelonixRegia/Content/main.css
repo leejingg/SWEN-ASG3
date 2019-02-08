@@ -169,7 +169,7 @@
 .bookingDetails {
     width: 65.15%;
     background-color: #FFF;
-    height: 500px;
+    height: 550px;
     margin-left: 240px;
 }
 
@@ -187,7 +187,6 @@
 .bookingTable table {
     width: 98%;
     margin-left: 10px;
-    padding: 50px;
 }
 
 .bookingTable a {
@@ -226,3 +225,70 @@
     height: 40px;
 }
 /* END OF BOOKING CONTENT */
+
+/* ADD BOOKING CONTENT */
+.abDWhole {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100px;
+}
+
+.abD, .arD, .pmD {
+    width: 80%;
+    margin-left: 40px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.pmD {
+    margin-top: 30px;
+}
+
+.arD {
+    text-align: center;
+}
+
+    .abD th, .arD th, .pmD th {
+        background-color: #797979;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .abD input[type=button], .arD input[type=button], .pmD input[type=button] {
+        background-color: #FFF;
+        color: black;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: 1px solid #797979;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+.cDetails {
+    width: 95%;
+    margin: 30px;
+    padding: 30px;
+    padding-left: 80px;
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    .cDetails th {
+        color: #797979;
+    }
+
+.note input[type=text] {
+    height: 100px;
+    width: 300px;
+}
+
+.cDetails input[type=button] {
+    background-color: #FFF;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid #797979;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* END OF ADD BOOKING CONTENT */

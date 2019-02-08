@@ -1,1 +1,172 @@
-﻿
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="~/Content/main.css">
+    <title>Delonix Regia. | Add Booking</title>
+</head>
+
+<body>
+    <div class="navtab">
+        <nav>
+            <ul>
+                <li><a href='@Url.Action("Dashboard", "Dashboard")'><img src="~/img/dash.PNG" width="170" height="100" /></a></li>
+                <li><a href='@Url.Action("Bookings", "Bookings")'><img src="~/img/bookw.PNG" width="170" height="100" /></a></li>
+                <li><a href='@Url.Action("Housekeeping", "Housekeeping")'><img src="~/img/housekeep.PNG" width="170" height="100" /></a></li>
+                <li><a href='@Url.Action("Reports", "Reports")'><img src="~/img/report.PNG" width="170" height="100" /></a></li>
+                <li><a href='@Url.Action("Users", "Users")'><img src="~/img/user.PNG" width="170" height="100" /></a></li>
+                <li><a href='@Url.Action("Index", "Home")'><img src="~/img/logout.PNG" width="170" height="100" /></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="mainContent">
+        <div class="navContent">
+            <nav class="subNav">
+                <ul>
+                    <li class="inactive"><a href='@Url.Action("Bookings", "Bookings")'>Bookings</a></li>
+                    <li class="active"><a href='@Url.Action("AddBookings", "Bookings")'>Add bookings</a></li>
+                    <li class="inactive"><a href='@Url.Action("Invoices", "Bookings")'>Invoices</a></li>
+                    <li class="fill"></li><li class="fill"></li><li class="fill"></li>
+                    <li class="fill"></li><li class="fill"></li><li class="fill"></li>
+                    <li class="fill"></li><li class="fill"></li><li class="fill"></li>
+                    <li class="fill"></li><li class="fill"></li><li class="fill"></li>
+                    <li class="fill"></li><li class="fill"></li><li class="fill"></li>
+                    <li class="fill"></li><li class="fill"></li><li class="fill"></li>
+                </ul>
+            </nav>
+            <div class="bookingDetails">
+                <nav class="subNav2">
+                    <ul>
+                        <li class="active"><a href='@Url.Action("AddBookings", "Bookings")'>Add bookings</a></li>
+                        <li class="inactive"><a href='@Url.Action("AddBookings2", "Bookings")'>Add client</a></li>
+                        <li class="fill"></li><li class="fill"></li><li class="fill"></li>
+                        <li class="fill"></li><li class="fill"></li><li class="fill"></li>
+                        <li class="fill"></li><li class="fill"></li><li class="fill"></li>
+                        <li class="fill"></li><li class="fill"></li><li class="fill"></li>
+                        <li class="fill"></li><li class="fill"></li><li class="fill"></li>
+                        <li class="fill"></li><li class="fill"></li><li class="fill"></li>
+                        <li class="fill"></li><li class="fill"></li><li class="fill"></li>
+                    </ul>
+                </nav>
+                <div class="abDetails">
+                    <table class="abDWhole">
+                        <tr>
+                            <td>
+                                <table class="abD">
+                                    <th colspan="2">Booking details</th>
+                                    <tr>
+                                        <td>Client</td>
+                                        <td><a href="#">Add client details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Status</td>
+                                        <td>
+                                            <select>
+                                                <option>Confirmed</option>
+                                                <option>Pending</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Arrival date/time</td>
+                                        <td>
+                                            <input type="text" />
+                                            <select>
+                                                <option>00</option>
+                                            </select>
+                                            <select>
+                                                <option>00</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Departure date</td>
+                                        <td><input type="text" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Unique ID</td>
+                                        <td><input type="text" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td><input type="button" value="Save" /></td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>
+                                <table class="pmD">
+                                    <th colspan="2">Payment details</th>
+                                    <tr>
+                                        <td>Payment method</td>
+                                        <td>
+                                            <select>
+                                                <option>--Choose--</option>
+                                                <option>Credit Card</option>
+                                                <option>Master Card</option>
+                                                <option>Paypal</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Room(s) price</td>
+                                        <td><input type="number" placeholder="0.00" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tax</td>
+                                        <td><input type="number" placeholder="0.00" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Security</td>
+                                        <td><input type="number" placeholder="0.00" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Deposit</td>
+                                        <td><input type="number" placeholder="0.00" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Promo code</td>
+                                        <td><input type="text" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Discount</td>
+                                        <td><input type="number" placeholder="0.00" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total</td>
+                                        <td><input type="number" placeholder="0.00" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td><input type="button" value="Save" /><input type="button" value="Calculate" /></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        <tr>
+                            <td>
+                                <table>
+                                    <table class="arD" border="1">
+                                        <th colspan="5">Rooms</th>
+                                        <tr>
+                                            <td><strong>Room type</strong></td>
+                                            <td><strong>Room number</strong></td>
+                                            <td><strong>Adults</strong></td>
+                                            <td><strong>Children</strong></td>
+                                            <td><strong>Price</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">There are no rooms added to this booking. <input type="button" value="+Add room" /></td>
+                                        </tr>
+                                    </table>
+                                </table>
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
