@@ -23,15 +23,27 @@
         <div class="navContent">
             <nav class="subNav">
                 <ul>
-                    <li class="inactive"><a href='@Url.Action("Client", "Users")'>Client</a></li>
-                    <li class="active"><a href='@Url.Action("Users", "Users")'>Staff</a></li>
+                    <li class="active"><a href='@Url.Action("Client", "Users")'>Client</a></li>
+                    <li class="inactive"><a href='@Url.Action("Users", "Users")'>Staff</a></li>
                     <li class="inactive"><a href='@Url.Action("AddStaff", "Users")'>Add Staff</a></li>
-                    <li class="fill"></li><li class="fill"></li><li class="fill"></li>
-                    <li class="fill"></li><li class="fill"></li><li class="fill"></li>
-                    <li class="fill"></li><li class="fill"></li><li class="fill"></li>
-                    <li class="fill"></li><li class="fill"></li><li class="fill"></li>
-                    <li class="fill"></li><li class="fill"></li><li class="fill"></li>
-                    <li class="fill"></li><li class="fill"></li><li class="fill"></li>
+                    <li class="fill"></li>
+                    <li class="fill"></li>
+                    <li class="fill"></li>
+                    <li class="fill"></li>
+                    <li class="fill"></li>
+                    <li class="fill"></li>
+                    <li class="fill"></li>
+                    <li class="fill"></li>
+                    <li class="fill"></li>
+                    <li class="fill"></li>
+                    <li class="fill"></li>
+                    <li class="fill"></li>
+                    <li class="fill"></li>
+                    <li class="fill"></li>
+                    <li class="fill"></li>
+                    <li class="fill"></li>
+                    <li class="fill"></li>
+                    <li class="fill"></li>
                 </ul>
             </nav>
         </div>
@@ -43,51 +55,52 @@
                 <table border=1>
                     <tr>
                         <th><input type="checkbox" /></th>
+                        <th>ID</th>
                         <th>Name</th>
                         <th>Email</th>
-                        <th>Date of birth</th>
-                        <th>Role</th>
-                        <th>Password</th>
+                        <th>Number</th>
                         <th>Status</th>
                         <th></th>
                     </tr>
                     <tr>
                         <td><input type="checkbox" /></td>
-                        <td><p>Administrator</p></td>
-                        <td><a href="#">admin@delonixregia.com</a></td>
-                        <td>205-10-1992</td>
-                        <td>Admin</td>
-                        <td>*****</td>
+                        <td><p>1</p></td>
+                        <td>Mechelle Perez</td>
+                        <td><a href="#">mechellep@gmail.com</a></td>
+                        <td>92378178</td>
                         <td>
                             <select class="request">
-                                <option>Active</option>
-                                <option>Inactive</option>
+                                <option>Upcoming</option>
+                                <option>Staying</option>
+                                <option>Departed</option>
+                            </select>
+                        </td>
+                        <td>
+                            <a href="#" style="text-decoration: none;">
+                                <a href="@Url.Action("ClientEdit", "Users")">
+                                    <img src="~/img/edit.PNG" width="30" height="30" class="tableEdit" /></a>
+                                    <img src="~/img/delete.PNG" width="30" height="30" class="tableDelete" />
+                                </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" /></td>
+                        <td><p>2</p></td>
+                        <td>Yuli Griffin</td>
+                        <td><a href="#">yuligriffin9@gmail.com</a></td>
+                        <td>96378262</td>
+                        <td>
+                            <select class="request">
+                                <option>Upcoming</option>
+                                <option>Staying</option>
+                                <option>Departed</option>
                             </select>
                         </td>
                         <td>
                             <a href="#" style="text-decoration: none;">
                                 <img src="~/img/edit.PNG" width="30" height="30" class="tableEdit" />
+                                <img src="~/img/delete.PNG" width="30" height="30" class="tableDelete" />
                             </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" /></td>
-                        <td><p>KOH JIA HUI</p></td>
-                        <td><a href="#">kohjh@delonixregia.com</a></td>
-                        <td>29-003-1996</td>
-                        <td>Receptionist</td>
-                        <td>********</td>
-                        <td>
-                            <select class="request">
-                                <option>Active</option>
-                                <option>Inactive</option>
-                            </select>
-                        </td>
-                        <td>
-                            <a href="#" style="text-decoration: none;">
-                                <a href="@Url.Action("StaffEdit", "Users")">
-                                    <img src="~/img/edit.PNG" width="30" height="30" class="tableEdit" /></a>
-                                </a>
                         </td>
                     </tr>
                 </table>

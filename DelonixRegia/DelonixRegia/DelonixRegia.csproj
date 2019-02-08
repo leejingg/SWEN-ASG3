@@ -219,6 +219,10 @@
     <Content Include="Views\Housekeeping\Housekeeping.cshtml" />
     <Content Include="Views\Reports\Reports.cshtml" />
     <Content Include="Views\Users\Users.cshtml" />
+    <Content Include="Views\Users\AddStaff.cshtml" />
+    <Content Include="Views\Users\Client.cshtml" />
+    <Content Include="Views\Users\ClientEdit.cshtml" />
+    <Content Include="Views\Users\StaffEdit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
