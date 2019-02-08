@@ -53,5 +53,24 @@ namespace DelonixRegia.Controllers
         {
             return View();
         }
+
+        public ActionResult Client()
+        {
+            return View();
+        }
+
+        public ActionResult AddStaff()
+        {
+            return View();
+        }
+
+        public ActionResult ClientEdit()
+        {
+            return View();
+        }
+        public ActionResult StaffEdit()
+        {
+            return View();
+        }
     }
 }
